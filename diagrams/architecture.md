@@ -4,9 +4,9 @@ This document describes the current state of the application architecture, ident
 
 ---
 
-## Current Architecture Overview
+## Current Architecture Summary
 
-The current implementation combines multiple responsibilities into a single module:
+The current implementation combines several responsibilities into a single module:
 
 - FastAPI routing and request handling
 - Business logic and workflow orchestration

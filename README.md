@@ -1,12 +1,12 @@
 # Messy LangGraph + Qdrant Onboarding Exercise
 
-## Overview
+## Summary
 
-This repository contains a functional FastAPI application that integrates **LangGraph** and **Qdrant** for document ingestion and semantic search.
+This repository contains a FastAPI application that integrates **LangGraph** and **Qdrant** into the document retrieval and semantic search process.
 
-The system works end-to-end but is intentionally implemented in an unstructured way. Important engineering practices such as separation of concerns, explicit dependency management, and testability are deliberately missing.
+The system functions end-to-end but is intentionally implemented in an unstructured manner. Important engineering practices such as separation of concerns, explicit dependency management, and testability have been deliberately omitted.
 
-The purpose of this exercise is **not to refactor the code immediately**, but to analyze the existing design, identify architectural issues, and propose a clear and incremental path toward a more maintainable and production-ready architecture.
+The goal of this exercise is **not to restructure the code directly**, but to analyze the existing design, identify architectural issues, and propose a clear and gradual path towards a more maintainable and production-ready architecture.
 
 ---
 

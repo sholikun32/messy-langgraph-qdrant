@@ -1,4 +1,4 @@
-# Kode & Desain
+# Messy LangGraph + Qdrant Onboarding Exercise
 
 ## Overview
 

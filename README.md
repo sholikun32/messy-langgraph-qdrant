@@ -12,15 +12,15 @@ The goal of this exercise is **not to restructure the code directly**, but to an
 
 ## What Works Well
 
-Despite its limitations, the current implementation demonstrates several positive aspects:
+Despite its limitations, the current implementation shows several positive aspects:
 
-- The application runs successfully and exposes clear API endpoints.
-- LangGraph is used effectively to model a retrieval → generation workflow.
+- The application runs successfully and provides clear API endpoints.
+- LangGraph is used effectively to model the retrieval → generation workflow.
 - Qdrant is integrated for vector storage and similarity search.
-- The system behavior is observable and easy to follow at runtime.
-- The code favors simplicity and avoids premature abstraction.
+- System behavior can be observed and easily followed at runtime.
+- The code prioritizes simplicity and avoids premature abstraction.
 
-These strengths provide a solid foundation for iterative improvement.
+These strengths provide a solid foundation for gradual improvement.
 
 ---
 

@@ -55,6 +55,11 @@ graph TD
     API --> UC
     UC --> WF
     WF --> ES
+    WF --> VR
+
+    ES --> EMB
+    VR --> QD
+
 ```
 
 ## Architecture Explanation
@@ -95,8 +100,4 @@ This design follows the **Dependency Inversion Principle**, ensuring that high-l
 - Safer evolution and extensibility
 - Clearer onboarding experience for new engineers
 
-    WF --> VR
-
-    ES --> EMB
-    VR --> QD
 

@@ -160,9 +160,9 @@ This approach allows the system to evolve safely while maintaining functionality
 
 Unit testing should focus on validating isolated behavior:
 
-- LangGraph workflow nodes tested with mocked services
-- Embedding generation logic tested independently
-- Vector repository behavior validated through interface-based mocks
+- LangGraph workflow nodes are tested with mock services
+- Embedding generation logic is tested independently
+- Vector repository behavior is verified through interface-based mocks
 
 ### Integration Testing
 

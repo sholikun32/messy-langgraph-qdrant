@@ -1,6 +1,6 @@
 # System Architecture
 
-This document describes the current state of the application architecture, the identified design issues, and the proposed target architecture for improving maintainability, testability, and extensibility.
+This document describes the current state of the application architecture, identified design issues, and the proposed target architecture to improve maintainability, testability, and scalability.
 
 ---
 

@@ -122,3 +122,63 @@ If refactoring were to begin, the highest-impact priorities would be:
 3. Introduce interfaces for embedding and vector storage
 4. Centralize configuration management
 5. Isolate side effects to improve testability
+
+## Incremental Migration Strategy
+
+To preserve existing behavior and minimize risk, refactoring should be performed incrementally rather than through a large rewrite.
+
+The proposed migration steps are:
+
+1. **Introduce environment-based configuration**  
+   Move hardcoded values (host, port, collection name, embedding dimensions) into environment variables or a centralized configuration module.
+
+2. **Wrap Qdrant access behind a repository interface**  
+   Introduce a vector repository abstraction so that the rest of the application is not tightly coupled to Qdrant-specific APIs.
+
+3. **Move embedding logic into a dedicated service**  
+   Encapsulate embedding generation behind an interface to allow easy replacement or extension of embedding models.
+
+4. **Refactor LangGraph nodes to accept dependencies explicitly**  
+   Pass required services (embedding, vector repository) into workflow nodes instead of relying on global state.
+
+5. **Gradually eliminate global variables**  
+   Replace shared global state with dependency injection and well-defined application lifecycles.
+
+6. **Add unit tests before removing legacy paths**  
+   Ensure current behavior is captured by tests to reduce regression risk during refactoring.
+
+7. **Introduce integration tests for API endpoints**  
+   Validate end-to-end behavior using controlled environments or in-memory dependencies.
+
+This approach allows the system to evolve safely while maintaining functionality and reducing the risk of breaking changes.
+
+---
+
+## Testing Strategy
+
+### Unit Testing
+
+Unit tests should focus on validating behavior in isolation:
+
+- LangGraph workflow nodes tested with mocked services
+- Embedding generation logic tested independently
+- Vector repository behavior validated through interface-based mocks
+
+### Integration Testing
+
+Integration tests should verify system behavior across boundaries:
+
+- FastAPI endpoints tested using test clients
+- Vector database interactions tested using in-memory or containerized Qdrant instances
+- Configuration loading validated across different environments
+
+---
+
+## Final Thoughts
+
+This codebase is not a failure; it reflects realistic trade-offs made under time pressure.
+
+The value of this exercise lies in recognizing architectural limitations, understanding their impact, and evolving the system intentionally rather than relying on large, risky rewrites.
+
+The proposed approach prioritizes clarity, explicit dependencies, and sustainable growth while preserving existing functionality.
+

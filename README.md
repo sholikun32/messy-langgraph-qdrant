@@ -8,6 +8,7 @@ The system works end-to-end but is intentionally implemented in an unstructured 
 
 The purpose of this exercise is **not to refactor the code immediately**, but to analyze the existing design, identify architectural issues, and propose a clear and incremental path toward a more maintainable and production-ready architecture.
 
+
 ---
 
 ## What Works Well

@@ -1,4 +1,4 @@
-# Code Quality & Design Principles – Onboarding Exercise
+# Kode & Desain
 
 ## Overview
 

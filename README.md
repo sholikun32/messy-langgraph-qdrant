@@ -158,7 +158,7 @@ This approach allows the system to evolve safely while maintaining functionality
 
 ### Unit Testing
 
-Unit tests should focus on validating behavior in isolation:
+Unit testing should focus on validating isolated behavior:
 
 - LangGraph workflow nodes tested with mocked services
 - Embedding generation logic tested independently

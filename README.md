@@ -8,7 +8,6 @@ The system works end-to-end but is intentionally implemented in an unstructured 
 
 The purpose of this exercise is **not to refactor the code immediately**, but to analyze the existing design, identify architectural issues, and propose a clear and incremental path toward a more maintainable and production-ready architecture.
 
-
 ---
 
 ## What Works Well
@@ -175,11 +174,11 @@ Integration tests should verify system behavior across boundaries:
 
 ---
 
-## Final Thoughts
+## Final Conclusion
 
-This codebase is not a failure; it reflects realistic trade-offs made under time pressure.
+This base code is not a failure; it reflects realistic compromises made under time pressure.
 
-The value of this exercise lies in recognizing architectural limitations, understanding their impact, and evolving the system intentionally rather than relying on large, risky rewrites.
+The value of this exercise lies in recognizing architectural limitations, understanding their impact, and developing the system in a planned manner rather than relying on risky, large-scale rewrites.
 
-The proposed approach prioritizes clarity, explicit dependencies, and sustainable growth while preserving existing functionality.
+The proposed approach prioritizes clarity, explicit dependencies, and sustainable growth while maintaining existing functionality.
 

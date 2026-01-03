@@ -14,7 +14,8 @@ The current implementation combines several responsibilities into a single modul
 - Vector database access
 - Global state management
 
-Most components rely on **global variables** and **implicit dependencies**, which introduces tight coupling and makes the system harder to test and evolve safely.
+Most components rely on **global variables** and **implicit dependencies**, which cause tight dependencies and make the system harder to test and develop safely.
+
 
 ---
 

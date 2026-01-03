@@ -30,16 +30,16 @@ The main issues identified in the current architecture are:
   Business logic depends directly on infrastructure details such as Qdrant and embedding implementations.
 
 - **Low testability**  
-  Components cannot be tested in isolation without bootstrapping the full application.
-
+   Components cannot be tested separately without loading the entire application.
+  
 - **Hardcoded configuration**  
-  Environment-specific values are embedded directly in code, limiting portability across environments.
+  Environment-specific values are embedded directly in the code, limiting portability between environments.
 
 ---
 
 ## Proposed Target Architecture
 
-The following diagram illustrates a cleaner separation of responsibilities and a more maintainable dependency direction.
+The following diagram illustrates a cleaner separation of responsibilities and easier-to-maintain dependency relationships.
 
 ```mermaid
 graph TD

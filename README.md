@@ -101,3 +101,23 @@ graph TD
 
     ES --> EMB
     VR --> QD
+
+### Architecture Explanation
+
+- **FastAPI Routers** are responsible only for HTTP concerns such as request parsing and response formatting.
+- **Application Use Cases** represent business actions and orchestrate workflows without knowing infrastructure details.
+- **LangGraph Workflow** models domain logic and coordinates steps like retrieval and answer generation.
+- **Interfaces** define contracts for embedding generation and vector storage without binding to specific technologies.
+- **Implementations** encapsulate external systems such as Qdrant and embedding models.
+
+This design follows the Dependency Inversion Principle and improves clarity, extensibility, and testability.
+
+## Refactoring Priorities
+
+If refactoring were to begin, the highest-impact priorities would be:
+
+1. Remove global state and introduce explicit dependency injection
+2. Decouple business logic from FastAPI routing
+3. Introduce interfaces for embedding and vector storage
+4. Centralize configuration management
+5. Isolate side effects to improve testability

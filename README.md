@@ -101,6 +101,7 @@ graph TD
 
     ES --> EMB
     VR --> QD
+```
 
 ### Architecture Explanation
 

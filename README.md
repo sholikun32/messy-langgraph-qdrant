@@ -166,17 +166,17 @@ Unit tests should focus on validating behavior in isolation:
 
 ### Integration Testing
 
-Integration tests should verify system behavior across boundaries:
+Integration testing must verify system behavior across boundaries:
 
-- FastAPI endpoints tested using test clients
-- Vector database interactions tested using in-memory or containerized Qdrant instances
-- Configuration loading validated across different environments
+- FastAPI endpoints are tested using a test client
+- Vector database interactions are tested using in-memory or containerized Qdrant instances
+- Configuration loading is verified across different environments
 
 ---
 
 ## Final Conclusion
 
-This base code is not a failure; it reflects realistic compromises made under time pressure.
+This base code is not a failure, it reflects realistic compromises made under time pressure.
 
 The value of this exercise lies in recognizing architectural limitations, understanding their impact, and developing the system in a planned manner rather than relying on risky, large-scale rewrites.
 
